@@ -1,0 +1,25 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Batch files should always use CRLF line endings
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Markdown files
+*.md text
+
+# Git files
+.gitattributes text
+.gitignore text
+
+# Archive files
+*.zip binary
+*.7z binary
+*.rar binary
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary

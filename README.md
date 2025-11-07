@@ -6,7 +6,7 @@ A Windows batch script that safely backs up and removes unwanted startup program
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-## 🎯 Purpose
+## Purpose
 
 This tool helps you clean up programs that automatically start with Windows by:
 - Backing up all registry startup entries before removal
@@ -14,20 +14,20 @@ This tool helps you clean up programs that automatically start with Windows by:
 - Protecting essential Windows services
 - Providing easy restoration instructions
 
-## ✨ Features
+## Features
 
-- ✅ **Dual Backup System**: Creates backups on both Desktop and in local Backups folder
-- ✅ **Safe Operation**: Protects critical entries (Default, OneDrive, SecurityHealth)
-- ✅ **Detailed Logging**: Complete record of all removed entries with restore instructions
-- ✅ **Easy Restoration**: Step-by-step guide to restore any entry if needed
-- ✅ **No Installation Required**: Portable batch script
+-  **Dual Backup System**: Creates backups on both Desktop and in local Backups folder
+-  **Safe Operation**: Protects critical entries (Default, OneDrive, SecurityHealth)
+-  **Detailed Logging**: Complete record of all removed entries with restore instructions
+-  **Easy Restoration**: Step-by-step guide to restore any entry if needed
+-  **No Installation Required**: Portable batch script
 
-## 📋 Requirements
+## Requirements
 
 - Windows 7 or later
 - Administrator privileges
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Download and Run
 
@@ -45,7 +45,7 @@ cd registry-startup-cleaner
 
 Right-click `RegistryStartupCleaner.bat` and run as administrator.
 
-## 📂 What Gets Scanned
+## What Gets Scanned
 
 The script scans these registry locations:
 
@@ -62,7 +62,7 @@ These entries are **NEVER** removed:
 - `OneDrive` - Microsoft OneDrive sync
 - `SecurityHealth` - Windows Security
 
-## 📁 Output Files
+## Output Files
 
 After running the script, you'll find backup folders containing:
 
@@ -82,7 +82,7 @@ script-directory\Backups\Backup_YYYYMMDD_HHMMSS\
 └── Summary.txt
 ```
 
-## 🔄 How to Restore Entries
+## How to Restore Entries
 
 ### Method 1: Manual Restore via Registry Editor
 
@@ -105,14 +105,14 @@ Example:
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "MyApp" /t REG_SZ /d "C:\Program Files\MyApp\app.exe" /f
 ```
 
-## ⚠️ Important Notes
+## Important Notes
 
 - **Always review** `Backup_Info.txt` before restoring any entries
 - **Only restore entries** you recognize and trust
 - **Keep backups** until you're certain everything works correctly
 - **Restart your computer** after making changes for them to take effect
 
-## 🐛 Common Issues
+## Common Issues
 
 ### "Access Denied" Error
 **Solution**: Make sure you're running the script as Administrator
@@ -126,7 +126,7 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "MyApp" /t REG_S
 - Program settings/preferences
 - Consider uninstalling the program
 
-## 📝 Example Use Case
+## Example Use Case
 
 **Problem**: MiniTool Partition Wizard opens automatically on startup with update notifications
 
@@ -136,8 +136,8 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "MyApp" /t REG_S
 3. Backups are saved to Desktop and Backups folder
 4. Restart computer
 5. MiniTool no longer opens on startup
-
-## 🤝 Contributing
+   
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -147,11 +147,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## ⚖️ Disclaimer
+## Disclaimer
 
 This tool modifies Windows registry. While it includes safety measures and backup functionality:
 - Use at your own risk
@@ -161,26 +157,9 @@ This tool modifies Windows registry. While it includes safety measures and backu
 
 The authors are not responsible for any system issues or data loss.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Inspired by common Windows startup management tools
 - Community feedback and testing
-
-## 📞 Support
-
-If you encounter issues:
-1. Check the [Issues](https://github.com/mirmohmmadluqman/registry-startup-cleaner/issues) page
-2. Review `Backup_Info.txt` for details on what was removed
-3. Create a new issue with:
-   - Windows version
-   - Error message (if any)
-   - Content of `Summary.txt`
-
-## 🔗 Links
-
-- [Report Bug](https://github.com/mirmohmmadluqman/registry-startup-cleaner/issues)
-- [Request Feature](https://github.com/mirmohmmadluqman/registry-startup-cleaner/issues)
-
----
 
 **Made with ❤️ for cleaner Windows startups**

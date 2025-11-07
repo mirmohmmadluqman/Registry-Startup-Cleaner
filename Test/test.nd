@@ -1,0 +1,58 @@
+## Test:
+
+```bash
+================================================================
+Registry Startup Cleaner v1.0
+================================================================
+
+Creating backup directories...
+Desktop backup: C:\Users\%USERPROFILE%\\Desktop\Registry_Startup_Backup_20250711_082052
+Local backup: C:\Users\%USERPROFILE%\\Documents\*****\BootGuard\Backups\Backup_20250711_082052
+
+================================================================
+Starting Registry Scan and Backup
+================================================================
+
+This script will:
+1. Backup all startup registry entries
+2. Remove entries (EXCEPT: Default, OneDrive, SecurityHealth)
+3. Save backups to Desktop AND local Backups folder
+
+Press any key to continue or Ctrl+C to cancel...
+
+----------------------------------------------------------------
+Processing: HKCU Run
+----------------------------------------------------------------
+  No entries to remove from this location
+
+----------------------------------------------------------------
+Processing: HKLM Run
+----------------------------------------------------------------
+  No entries to remove from this location
+
+----------------------------------------------------------------
+Processing: HKCU RunOnce
+----------------------------------------------------------------
+  No entries to remove from this location
+
+
+================================================================
+Operation Complete
+================================================================
+
+Backups saved to:
+1. Desktop: C:\Users\Mir Mohmmad Luqman\Desktop\Registry_Startup_Backup_20250711_082052
+2. Local: C:\Users\Mir Mohmmad Luqman\Documents\****\BootGuard\Backups\Backup_20250711_082052
+
+Files created:
+- Backup_Info.txt (all removed entries with registry paths)
+- How_To_Restore.txt (restoration instructions)
+- Summary.txt (operation summary)
+
+A restart may be required for changes to take effect.
+
+Press any key to continue . . .
+```
+
+#### Test Successful
+

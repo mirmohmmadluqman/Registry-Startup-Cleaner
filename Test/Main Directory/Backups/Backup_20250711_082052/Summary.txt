@@ -6,8 +6,8 @@ Time:  8:20:57.53
 Operation completed successfully 
  
 Backup Locations: 
-1. Desktop: C:\Users\Mir Mohmmad Luqman\Desktop\Registry_Startup_Backup_20250711_082052 
-2. Local: C:\Users\Mir Mohmmad Luqman\Documents\Trath\BootGuard\Backups\Backup_20250711_082052 
+1. Desktop: C:\Users\%USERPROFILE%\\Desktop\Registry_Startup_Backup_20250711_082052 
+2. Local: C:\Users\%USERPROFILE%\\Documents\Trath\BootGuard\Backups\Backup_20250711_082052 
  
 Registry locations scanned: 
 - HKEY_CURRENT_USER\...\Run 
